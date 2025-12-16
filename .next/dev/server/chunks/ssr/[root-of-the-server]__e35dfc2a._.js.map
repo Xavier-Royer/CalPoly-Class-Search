@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///D:/GithubRepos/CalPoly-Class-Search/src/app/page.tsx"],"sourcesContent":["export default function Home() {\n  return (\n    <div>\n      <main >\n        <div>\n         What a beautiful website \n        </div>\n      </main>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;kBACC,cAAA,8OAAC;sBACC,cAAA,8OAAC;0BAAI;;;;;;;;;;;;;;;;AAMb"}}]
+}
