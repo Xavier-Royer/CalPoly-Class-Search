@@ -91,6 +91,76 @@
 }
 
 /* [project]/src/app/globals.css [app-client] (css) */
+.search-bar {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  width: 100%;
+  display: flex;
+}
 
+.catalog-container {
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.course-container {
+  background-color: #cdcdcd;
+  border: 3px solid gray;
+  width: 90%;
+  height: 220px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px #0000004d;
+}
+
+.course-container h3 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.details-contianer {
+  flex-direction: row;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.course-container .description-container {
+  width: 60%;
+  height: 100%;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.course-container .extra-info-container {
+  width: 25%;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.course-container h4 {
+  align-self: left;
+  align-self: top;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.course-container p, .course-container div {
+  align-self: left;
+  align-self: top;
+  margin-top: 10px;
+  margin-left: 30px;
+}
 
 /*# sourceMappingURL=%5Broot-of-the-server%5D__0f0ba101._.css.map*/
