@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function Course(course:CourseProps) {
     return (
     <div className="course-container">
-    <h3>{course.title} - {course.major}</h3>
+    <h3>{course.title} - {course.major_id}</h3>
     
         <div className="details-contianer">
         <div className="description-container">
@@ -14,12 +14,16 @@ function Course(course:CourseProps) {
     
         <div className="extra-info-container">
             <h4>Additional Information</h4>
+            
+            <div> Course Code: {course.code} </div>
 
-            {course.termsOffered == "NONE" ? null : <div>Terms Offered: {course.termsOffered}</div>}
+            {course.min_credits != course.max_credits ? <div> Units: {course.min_credits}-{course.max_credits}</div> : <div> Units: {course.max_credits} </div> }
+
+            {course.terms_offered == "NONE" ? null : <div>Terms Offered: {course.terms_offered}</div>}
     
-            {course.minUnits != course.maxUnits ? <div> Units: {course.minUnits}-{course.maxUnits}</div> : <div> Units: {course.maxUnits} </div> }
-    
-            {course.prerequisites == "NONE" ? null : <div> "Prerequisites: " {course.prerequisites }</div> }
+            {course.prerequisites == "NONE" ? null : <p> Prerequisites:  {course.prerequisites }</p> }
+        
+        
         </div>
         </div>
     
@@ -28,15 +32,16 @@ function Course(course:CourseProps) {
 }
 
 type CourseProps = {
-    major: string;
+    major_id: string;
     title: string;
     code: string;
     description: string;
-    minUnits: number;
-    maxUnits: number;
-    termsOffered: string;
+    min_credits: number;
+    max_credits: number;
+    terms_offered: string;
     prerequisites: string;
 }
+
 
 
 Course.PropTypes = {

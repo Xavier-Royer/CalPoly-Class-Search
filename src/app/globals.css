@@ -9,6 +9,7 @@
 }
 
 .catalog-container {
+  /*border: 5px solid green;*/
   width: 80%; 
   align-items: center;
   margin-right: auto;
@@ -19,13 +20,14 @@
 }
 
 .course-container {
+  
   width: 90%;
   border: 3px solid gray;
   margin-bottom : 20px;
   margin-top : 20px; 
   background-color: rgb(205, 205, 205);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  height: 220px;
+  min-height: 220px;
 }
 
 .course-container h3 {
@@ -35,7 +37,8 @@
 }
 
 .details-contianer{
-  width: 100%; 
+  width: 95%; 
+  
   /*align-items: center;*/
   margin-right: auto;
   margin-left: auto;
@@ -81,4 +84,39 @@
   align-self: left;
   align-self: top;
   margin-left: 30px;
+}
+
+.filter-and-results-container {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+}
+
+.filter {
+  align-self: top;
+  align-self: left;
+  /*border: 5px solid blue;*/
+  width: 20%;
+  height: 300px; 
+}
+.filter h3 {
+  margin-left: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.filter .filter-item {
+  margin-left: 25px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+
+.filter .filter-item input{
+  width: 50px;
+}
+
+.filter div {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
